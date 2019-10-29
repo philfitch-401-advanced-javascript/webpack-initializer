@@ -4,7 +4,7 @@ function srcIndexWriter(path) {
   const js = path + '/index.js';
   const html = path + '/index.html';
 
-  return write(`import React from 'react';
+  write(`import React from 'react';
   import { render } from 'react-dom';
   import App from './components/App';
   
@@ -13,8 +13,7 @@ function srcIndexWriter(path) {
     document.getElementById('root')
   );`, js)
 
-  .then(() => {
-    return write(`<!DOCTYPE html>
+    write(`<!DOCTYPE html>
     <html lang="en">
     <head>
       <meta charset="UTF-8">
@@ -26,7 +25,6 @@ function srcIndexWriter(path) {
       <div id=root></div>
     </body>
     </html>`, html)
-  })
 };
 
 module.exports = srcIndexWriter;

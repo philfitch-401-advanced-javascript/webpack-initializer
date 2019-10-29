@@ -1,37 +1,37 @@
 const installer = require('./installer');
 
 function devDependenciesInstaller(path) {
-  return installer(path, `"devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "autoprefixer": "^9.7.0",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.2.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "enzyme-to-json": "^3.4.3",
-    "eslint": "^6.6.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-react": "^7.16.0",
-    "file-loader": "^4.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
-    "postcss-import": "^12.0.1",
-    "postcss-loader": "^3.0.0",
-    "postcss-nested": "^4.1.2",
-    "postcss-simple-vars": "^5.0.2",
-    "prop-types": "^15.7.2",
-    "style-loader": "^1.0.0",
-    "url-loader": "^2.2.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0"
-  }`, true)
+  return installer(path, [
+    "@babel/core", 
+    "@babel/plugin-proposal-class-properties", 
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "autoprefixer",
+    "babel-eslint",
+    "babel-loader",
+    "clean-webpack-plugin",
+    "css-loader",
+    "enzyme",
+    "enzyme-adapter-react-16",
+    "enzyme-to-json",
+    "eslint",
+    "eslint-plugin-babel",
+    "eslint-plugin-react",
+    "file-loader",
+    "html-webpack-plugin",
+    "identity-obj-proxy",
+    "jest",
+    "postcss-import",
+    "postcss-loader",
+    "postcss-nested",
+    "postcss-simple-vars",
+    "prop-types",
+    "style-loader",
+    "url-loader",
+    "webpack",
+    "webpack-cli",
+    "webpack-dev-server"
+  ], true)
 }
 
 module.exports = devDependenciesInstaller;
