@@ -1,7 +1,7 @@
 {
   "name": "create-phil-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Webpack Initializer",
   "main": "src/index.js",
   "jest": {
     "setupFilesAfterEnv": [
@@ -58,5 +58,16 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.9.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philfitch-401-advanced-javascript/webpack-initializer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/philfitch-401-advanced-javascript/webpack-initializer/issues"
+  },
+  "homepage": "https://github.com/philfitch-401-advanced-javascript/webpack-initializer#readme"
 }
