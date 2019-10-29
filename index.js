@@ -21,4 +21,3 @@ srcIndexWriter('./fakeSrc');
 
 dependenciesInstaller('./');
 devDependenciesInstaller('./');
-
