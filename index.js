@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+
 const packageJsonWriter = require('./Writers/package-json-writer');
 const eslintWriter = require('./Writers/eslint-writer');
 const babelWriter = require('./Writers/babel-writer');
@@ -21,3 +22,5 @@ srcIndexWriter('./fakeSrc');
 
 dependenciesInstaller('./');
 devDependenciesInstaller('./');
+
+
