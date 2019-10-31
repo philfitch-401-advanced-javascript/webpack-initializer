@@ -9,16 +9,16 @@ function installer(path, packages, dev) {
         cwd: path,
         stdio: 'inherit'
       });
-    })
+    });
   } else {
     packages.forEach((pkg) => {
       execSync(`npm i ${pkg}`, {
         cwd: path,
         stdio: 'inherit'
       });
-    })
+    });
   }
   console.log('installer completed');
-};
+}
 
 module.exports = installer;
